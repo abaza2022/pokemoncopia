@@ -9,6 +9,7 @@ public class Walk : MonoBehaviour
     private Vector2 input;
     private Animator animator;
     public LayerMask Solids;
+    public LayerMask Cliff;
 
     private void Awake()
     {
@@ -56,7 +57,7 @@ public class Walk : MonoBehaviour
 
     private bool IsWalkable(Vector3 targetPos)
     {
-        if (Physics2D.OverlapCircle(targetPos, 0.2f, Solids) != null)
+        if (Physics2D.OverlapCircle(targetPos, 0.2f, Solids) != null || Physics2D.OverlapCircle(targetPos, 0.2f, Cliff) != null && input.y > 0)
         {
             return false;
         }
