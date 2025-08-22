@@ -10,6 +10,7 @@ public class Walk : MonoBehaviour
     private Animator animator;
     public LayerMask Solids;
     public LayerMask Cliff;
+    public LayerMask Grass;
 
     private void Awake()
     {
@@ -53,6 +54,8 @@ public class Walk : MonoBehaviour
         transform.position = targetPos;
 
         isWalking = false;
+
+        CheckForBattle();
     }
 
     private bool IsWalkable(Vector3 targetPos)
@@ -63,5 +66,16 @@ public class Walk : MonoBehaviour
         }
 
         return true;
+    }
+
+    private void CheckForBattle()
+    {
+        if (Physics2D.OverlapCircle(transform.position, 0.2f, Grass) != null)
+        {
+            if (Random.Range(1, 11) == 1)
+            {
+                Debug.Log("Pokemon Salvaje!");
+            }
+        }
     }
 }

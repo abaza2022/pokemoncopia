@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 64f1ab62b75bebb4087d1718e969cda6
+guid: 6d2b5c04353974949946e4bff103caa1
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 4360390788417139489
-    second: sand_0
+      213: -5736437305900959143
+    second: sandcliff_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -100,7 +100,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: sand_0
+      name: sandcliff_0
       rect:
         serializedVersion: 2
         x: 0
@@ -115,14 +115,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 1233d79d158338c30800000000000000
-      internalID: 4360390788417139489
+      spriteID: 95a7979c9a41460b0800000000000000
+      internalID: -5736437305900959143
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: sand_1
+      name: sandcliff_1
       rect:
         serializedVersion: 2
         x: 16
@@ -137,14 +137,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9be949ebf5bd765459365ee87035e18b
-      internalID: 659277116
+      spriteID: 135defdf24b83924797e98a3eebc7ef6
+      internalID: -945002054
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: sand_2
+      name: sandcliff_2
       rect:
         serializedVersion: 2
         x: 32
@@ -159,30 +159,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: cc0989bb0db56294c99f1c40a490279e
-      internalID: 488953546
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: sand_3
-      rect:
-        serializedVersion: 2
-        x: 48
-        y: 0
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: f440d073be86ed64b9678f3c9233506c
-      internalID: 1673330462
+      spriteID: 9c27a0f0320d51c46aba0edee67afe25
+      internalID: -677934154
       vertices: []
       indices: 
       edges: []
@@ -191,7 +169,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 50ab3a2e9188acd439e57f5b83aa0c57
+    spriteID: d7676176777ae4f4c8dce2d7f6052035
     internalID: 0
     vertices: []
     indices: 
@@ -201,10 +179,9 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      sand_0: 4360390788417139489
-      sand_1: 659277116
-      sand_2: 488953546
-      sand_3: 1673330462
+      sandcliff_0: -5736437305900959143
+      sandcliff_1: -945002054
+      sandcliff_2: -677934154
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
