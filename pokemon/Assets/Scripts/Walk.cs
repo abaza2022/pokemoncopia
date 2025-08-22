@@ -11,6 +11,9 @@ public class Walk : MonoBehaviour
     public LayerMask Solids;
     public LayerMask Cliff;
     public LayerMask Grass;
+    public AudioSource audioSource;
+    public AudioClip hopSFX;
+    public AudioClip blockSFX;
 
     private void Awake()
     {
@@ -35,7 +38,15 @@ public class Walk : MonoBehaviour
                 targetPos.x += input.x;
                 targetPos.y += input.y;
 
+                if (input.y < 0 && Physics2D.OverlapCircle(targetPos, 0.2f, Cliff) != null)
+                {
+                    targetPos.y += input.y;
+                    audioSource.PlayOneShot(hopSFX);
+                }
+
                 if (IsWalkable(targetPos)) StartCoroutine(Move(targetPos));
+                else audioSource.PlayOneShot(blockSFX);
+                    return;
             }
         }
 
